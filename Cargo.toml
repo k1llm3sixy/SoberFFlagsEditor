@@ -1,0 +1,17 @@
+[package]
+name = "sober-fflag-editor"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["k1llm3sixy"]
+description = "CLI tool to manage and edit Roblox FFlags for Sober on Linux "
+
+[[bin]]
+name = "sff"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+clap = { version = "4.6.1", features = ["derive"] }
+thiserror = "2.0.18"
